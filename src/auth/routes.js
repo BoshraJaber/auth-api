@@ -1,5 +1,6 @@
 'use strict';
 
+const fs = require('fs');
 const express = require('express');
 const authRouter = express.Router();
 
@@ -7,6 +8,8 @@ const User = require('./models/users.js');
 const basicAuth = require('./middleware/basic.js')
 const bearerAuth = require('./middleware/bearer.js')
 const permissions = require('./middleware/acl.js')
+
+
 
 authRouter.post('/signup', async (req, res, next) => {
   try {
@@ -39,5 +42,6 @@ authRouter.get('/users', bearerAuth, permissions('delete'), async (req, res, nex
 authRouter.get('/secret', bearerAuth, async (req, res, next) => {
   res.status(200).send('Welcome to the secret area')
 });
+
 
 module.exports = authRouter;
