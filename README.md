@@ -2,10 +2,10 @@
 
 # Week 2
 # Class07- Lab06
-# Bearer Auth
+# Auth API Server
 ## Deployment Test
 ### Author: Boshra Jaber
-* [tests report](https://github.com/BoshraJaber/bearer-auth/actions)
+* [tests report](https://github.com/BoshraJaber/auth-api/actions)
 * [Heroku application for main branch](https://boshra-bearer-auth.herokuapp.com/)
 * [Pull Request to main](https://github.com/BoshraJaber/bearer-auth/pull/2)
 
@@ -97,5 +97,11 @@ Unit Tests: `npm run test`
 Lint Tests: `npm run lint`
 
 ## UML:
-Here is a UML of my code: 
-![](./src/UML-beaerlab.png)
+Here is a UML of my code:
+
+![](./src/lab08.png)
+
+## WRRC:
+Here is a WRRC of my code:
+
+![](./src/WRRCLab8.png)
