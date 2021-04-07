@@ -6,8 +6,8 @@
 ## Deployment Test
 ### Author: Boshra Jaber
 * [tests report](https://github.com/BoshraJaber/auth-api/actions)
-* [Heroku application for main branch](https://boshra-bearer-auth.herokuapp.com/)
-* [Pull Request to main](https://github.com/BoshraJaber/bearer-auth/pull/2)
+* [Heroku application for main branch](https://boshra-auth-api.herokuapp.com/)
+* [Pull Request to main](https://github.com/BoshraJaber/auth-api/pull/2)
 
 ## Setup
 - `.env` requirements:
