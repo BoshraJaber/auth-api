@@ -37,8 +37,8 @@ describe('Auth Middleware', () => {
 
     //   return middleware(req, res, next)
     //     .then(() => {
-    //     //   expect(next).not.toHaveBeenCalled();
-    //       expect(res.status).toHaveBeenCalledWith(403);
+    //       expect(next).toHaveBeenCalled();
+    //       expect(res.status).toEqual(403);
     //     });
 
     // });
