@@ -92,15 +92,15 @@ describe('Auth Router', () => {
         expect(userObject.token).not.toBeDefined()
 
       });
-			// it('bearer fails with an invalid token', async () => {
-			// 	// First, use basic to login to get a token
-			// 	const bearerResponse = await mockRequest
-			// 		.get('/users')
-			// 		.set('Authorization', `Bearer foobar`);
+			it('bearer fails with an invalid token', async () => {
+				// First, use basic to login to get a token
+				const bearerResponse = await mockRequest
+					.get('/users')
+					.set('Authorization', `Bearer foobar`);
 
-			// 	// Not checking the value of the response, only that we "got in"
-			// 	expect(bearerResponse.status).toBe(403);
-			// });
+				// Not checking the value of the response, only that we "got in"
+				expect(bearerResponse.status).toBe(403);
+			});
     })
 
   });
