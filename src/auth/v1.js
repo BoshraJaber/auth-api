@@ -16,7 +16,7 @@ router.param('model', (req, res, next) => {
   } else {
     const fileName = `${__dirname}/./models/${modelName}/model.js`;
     // const fileName = `../models/${modelName}/model.js`;
-    console.log(fileName);
+    // console.log(fileName);
     if (fs.existsSync(fileName)) {
       const model = require(fileName);
       models.set(modelName, new Collection(model));
@@ -86,4 +86,7 @@ async function handleDelete(req, res) {
 }
 
 
-module.exports = router;
+module.exports ={ 
+  router : router,
+  models : models,
+}
